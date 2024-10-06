@@ -297,7 +297,6 @@ button {
     letter-spacing: 0.02em;
     text-align: center;
     text-transform: capitalize;
-    padding-top: 120px;
     margin-bottom: 72px;
 }
 
@@ -307,7 +306,6 @@ button {
     line-height: 1.2;
     letter-spacing: 0.02em;
     color: #2e2f42;
-    padding-top: 32px;
     margin-bottom: 8px;
     text-align: center;
 }
@@ -323,13 +321,11 @@ button {
 .team-info-blocks {
     display: flex;
     align-items: center;
-    padding-bottom: 120px;
     gap: 24px;
 }
 
 .info-block {
     border-radius: 0 0 4px 4px;
-    padding: 0px 0px 32px 0px;
     text-align: center;
     box-shadow: 0px 3px 4px 0px rgba(0, 0, 0, 0.14);
 }
@@ -531,7 +527,8 @@ button {
     font-size: 16px;
     line-height: 150%;
     color: #f4f4fd;
-    letter-spacing: 0.02em
+    letter-spacing: 0.02em;
+    max-width: 264px;
 }
 .form-container {
     margin-left: 80px;
@@ -1216,7 +1213,6 @@ button {
         padding-left: 93px;
         gap: 24px;
         row-gap: 64px;
-        padding-bottom: 96px;
     }
 
     .app-info-block {
@@ -1347,14 +1343,9 @@ button {
         height: 224px;
     }
 
-    .team-title {
-        padding-top: 120px;
-    }
-
     .team-info-blocks {
         padding-left: 0;
         padding-right: 0;
-        padding-bottom: 120px;
     }
 
     .apps-info {
