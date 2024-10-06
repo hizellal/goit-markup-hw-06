@@ -1104,6 +1104,12 @@ button {
 
 
 @media (min-width: 768px) and (max-width: 1157px) {
+    .mobile-menu {
+        visibility: hidden;
+        width: 0;
+        height: 0;
+    }
+
     .container {
         max-width: 768px;
     }
@@ -1193,6 +1199,8 @@ button {
 
     .portfolio-lists {
         gap: 24px;
+        flex-wrap: wrap;
+        row-gap: 72px;
         padding: 0;
     }
 
@@ -1202,6 +1210,8 @@ button {
     }
 
     .team-info-blocks {
+        flex-wrap: wrap;
+        row-gap: 64px;
         padding-right: 93px;
         padding-left: 93px;
         gap: 24px;
@@ -1239,8 +1249,17 @@ button {
         text-align: left;
     }
 
+    .footer-container {
+        flex-wrap: wrap;
+        row-gap: 72px;
+    }
+
     .form-container-paragraph {
         text-align: left;
+    }
+
+    .form-container {
+        margin: 0;
     }
 
     .modal {
