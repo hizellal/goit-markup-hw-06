@@ -1389,4 +1389,9 @@ button {
     .form-container-btn {
         margin: 0;
     }
+
+    .modal {
+        top: 80px;
+        left: 375px;
+    }
 }
