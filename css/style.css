@@ -1181,6 +1181,12 @@ button {
         text-align: center;
     }
 
+    .portfolio-list-icon {
+        visibility: hidden;
+        width: 0;
+        height: 0;
+    }
+
     .portfolio-list {
         width: 356px;
     }
