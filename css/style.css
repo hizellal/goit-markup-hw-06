@@ -808,7 +808,7 @@ button {
 /* media-requests */
 
 
-@media (min-width: 320px) {
+@media (min-width: 320px) and (max-width: 767px) {
     .container {
         max-width: 320px;
     }
@@ -1103,7 +1103,7 @@ button {
 }
 
 
-@media (min-width: 768px) {
+@media (min-width: 768px) and (max-width: 1157px) {
     .container {
         max-width: 768px;
     }
