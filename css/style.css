@@ -811,9 +811,7 @@ button {
     }
 
     .nav-list {
-        visibility: hidden;
-        width: 0;
-        height: 0;
+        display: none;
     }
 
     .contacts {
@@ -822,6 +820,7 @@ button {
 
     .burger-btn {
         padding: 0;
+        padding-left: 73px;
         border: none;
         background-color: transparent;
     }
@@ -998,7 +997,7 @@ button {
 
     .team-info {
         margin: 0;
-        padding: 0;
+        padding: 0, 96px, 0, 96px;
     }
     
     .team-info-blocks {
