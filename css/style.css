@@ -1088,6 +1088,10 @@ button {
         left: 16px;
     }
 
+    .modal-backdrop {
+        max-width: 320px;
+    }
+
     .review-form-sumbit-btn {
         margin: 0;
         margin-left: auto;
