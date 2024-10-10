@@ -98,11 +98,6 @@ button {
     gap: 40px;
 }
 
-.current {
-    position: relative;
-    color: #404bbf;
-}
-
 .nav-link {
     position: relative;
     display: block;
@@ -124,6 +119,11 @@ button {
     height: 4px;
     background-color: #404bbf;  
     border-radius: 2px;
+}
+
+.current {
+    position: relative;
+    color: #404bbf;
 }
 
 .contacts {
