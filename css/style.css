@@ -110,7 +110,7 @@ button {
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.nav-link::after {
+.nav-link.current::after {
     content: '';
     width: 100%;
     position: absolute;
@@ -368,12 +368,9 @@ button {
     background-color: #404bbf;
 }
 
-.lists-icon .social-icon {
-    fill: #f4f4fd;
-}
-
 .lists-icon .social-icon:hover {
-    background-color: #03a9f4;
+    stroke: #03a9f4;
+    fill: #03a9f4;
 }
 
 /* end of third section */
@@ -585,6 +582,12 @@ button {
     background-color: #4D5AE5;
     border: none;
     border-radius: 4px;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.form-container-btn:hover,
+.form-container-btn:focus {
+    background-color: #404bbf;
 }
 
 .form-container-btn-icon {
@@ -620,6 +623,7 @@ button {
     padding: 72px 24px 24px 24px;
     background: #fcfcfc;
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    transform: translate(-50%, -50%);
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -800,6 +804,11 @@ button {
     text-align: center;
     color: #fff;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.review-form-sumbit-btn:hover,
+.review-form-sumbit-btn:focus {
+    background-color: #404BBF;
 }
 
 /* end of modal-window */
@@ -1091,12 +1100,6 @@ button {
 
     .modal {
         width: 288px;
-        top: 8px;
-        left: 16px;
-    }
-
-    .modal-backdrop {
-        max-width: 320px;
     }
 
     .review-form-sumbit-btn {
@@ -1264,8 +1267,6 @@ button {
 
     .modal {
         width: 408px;
-        top: 96px;
-        left: 180px;
     }
 
     .review-form-sumbit-btn {
@@ -1383,10 +1384,5 @@ button {
 
     .form-container-btn {
         margin: 0;
-    }
-
-    .modal {
-        top: 80px;
-        left: 375px;
     }
 }
