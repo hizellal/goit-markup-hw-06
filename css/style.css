@@ -61,8 +61,6 @@ button {
 .header-container {
     display: flex;
     align-items: center;
-    width: 1158px;
-    margin: 0 auto;
 }
   
 .header-nav {
@@ -459,7 +457,7 @@ button {
 
 .foot {
     background: #2e2f42;
-    padding: 100px 0 100px;
+    padding: 100px 0 100px 0;
 }
 
 .footer-container {
@@ -599,6 +597,7 @@ button {
 /* modal-window */
 
 .modal-backdrop {
+    visibility: hidden;
     position: fixed;
     left: 0;
     top: 0;
@@ -612,13 +611,19 @@ button {
     transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.modal-backdrop.is-open {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+}
+
 .modal {
     position: absolute;
     width: 408px;
     min-height: 584px;
     top: 50%;
     left: 50%;
-    max-height: 584px;
+    max-height: 623px;
     border-radius: 4px;
     padding: 72px 24px 24px 24px;
     background: #fcfcfc;
@@ -793,6 +798,7 @@ button {
     min-width: 169px;
     margin-left: 96px;
     border: none;
+    border-radius: 4px;
     padding: 16px 32px;
     height: 56px;
     cursor: pointer;
@@ -831,6 +837,7 @@ button {
 
     .header-logo {
         padding: 0;
+        margin: 0;
     }
 
     .burger-btn {
@@ -871,7 +878,6 @@ button {
         pointer-events: none;
 
         transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
-        visibility: 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
 
     .mobile-menu.is-open {
@@ -905,7 +911,7 @@ button {
     }
 
     .mobile-nav-lists {
-        margin-bottom: 168px;
+        margin-bottom: 100%;
     }
 
     .mobile-nav-list {
@@ -926,6 +932,7 @@ button {
     }
 
     .mobile-menu-address {
+        display: flex;
         font-style: normal;
         margin-left: auto;
     }
@@ -948,7 +955,7 @@ button {
     .mobile-social-links {
         display: flex;
         gap: 40px; 
-        padding-top: 24px;
+        margin-top: 24px;
     }
     
     .mobile-social-link {
@@ -977,6 +984,11 @@ button {
     }    
 
     .main-section {
+        background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7), 
+        rgba(46, 47, 66, 0.7)
+        ),
+        url('../images/office-mobile.jpg');
         padding-top: 72px;
         padding-bottom: 72px;
         max-width: 100%;
@@ -994,18 +1006,17 @@ button {
 
     .portfolio-list {
         width: 288px;
-        height: 120px;
     }
 
     .portfolio-list-icon {
-        visibility: hidden;
-        width: 0;
-        height: 0;
+        display: none;
     }
 
     .portfolio-info {
         margin: 0;
-        padding: 96px, 0px;
+        padding: 0;
+        padding-top: 96px;
+        padding-bottom: 96px;
     }
 
     .portfolio-title {
@@ -1014,9 +1025,16 @@ button {
         text-align: center;
     }
 
+    .portfolio-padding {
+        font-weight: 500;
+        font-size: 16px;
+    }
+
     .team-info {
         margin: 0;
-        padding: 0, 96px, 0, 96px;
+        padding: 0;
+        padding-top: 96px;
+        padding-bottom: 96px;
     }
     
     .team-info-blocks {
@@ -1042,7 +1060,7 @@ button {
     }
 
     .foot {
-        padding: 90px 0 90px;
+        padding: 100px 1px 100px 1px;
     }
 
     .footer-container {
@@ -1054,6 +1072,8 @@ button {
 
     .logo-p {
         margin: 0;
+        margin-left: auto;
+        margin-right: auto;
     }
 
     .footer-logo {
@@ -1172,6 +1192,11 @@ button {
     }
 
     .main-section {
+        background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7), 
+        rgba(46, 47, 66, 0.7)
+        ),
+        url('../images/office-tablet.jpg');
         padding-top: 112px;
         padding-bottom: 112px;
         max-width: 100%;
@@ -1188,7 +1213,7 @@ button {
     .portfolio-title {
         font-weight: 700;
         font-size: 36px;
-        text-align: center;
+        text-align: left;
     }
 
     .portfolio-list-icon {
@@ -1227,11 +1252,6 @@ button {
         row-gap: 72px;
     }
 
-    .footer-container {
-        padding-left: 108px;
-        padding-right: 164px;
-    }
-
     .foot {
         padding: 0;
         padding-top: 96px;
@@ -1240,7 +1260,6 @@ button {
 
     .logo-p {
         margin-right: 24px;
-        width: 264px;
         row-gap: 72px;
     }
 
@@ -1253,6 +1272,8 @@ button {
     }
 
     .footer-container {
+        padding-left: 108px;
+        padding-right: 164px;
         flex-wrap: wrap;
         row-gap: 72px;
     } 
@@ -1282,17 +1303,11 @@ button {
     }
 
     .burger-btn {
-        visibility: hidden;
-        width: 0;
-        height: 0;
+        display: none;
     }
 
     .container {
         min-width: 1158px;
-    }
-
-    .header-container {
-        min-width: 100%;
     }
 
     .header-logo {
@@ -1300,7 +1315,6 @@ button {
     }
 
     .contacts-list {
-        padding-left: 332px;
         padding-top: 24px;
         padding-bottom: 24px;
         gap: 40px;
@@ -1351,6 +1365,8 @@ button {
     .team-info-blocks {
         padding-left: 0;
         padding-right: 0;
+        margin-left: auto;
+        margin-right: auto;
     }
 
     .apps-info {
@@ -1363,14 +1379,18 @@ button {
     }
 
     .f-social-links {
-        margin-left: 80px;
-        margin-right: 80px;
+        margin-left: 120px;
     }
 
     .footer-container {
-        padding-right: 30px;
-        padding-left: 30px;
+        justify-content: center;
+        padding: 0;
         flex-wrap: nowrap;
+    }
+
+    .form-container {
+        margin: 0;
+        margin-left: 80px;
     }
 
     .form-container-form {
@@ -1379,10 +1399,39 @@ button {
 
     .form-container-label {
         margin-left: 0;
-        margin-right: 14px;
     }
 
     .form-container-btn {
         margin: 0;
+    }
+}
+
+@media (min-width: 1158px) and (min-resolution: 192dpi) {
+    .main-section {
+        background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7), 
+        rgba(46, 47, 66, 0.7)
+        ),
+        url('../images/office@2x.jpg');
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1157px) and (min-resolution: 192dpi) {
+    .main-section {
+        background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7), 
+        rgba(46, 47, 66, 0.7)
+        ),
+        url('../images/office-tablet@2x.jpg');
+    }
+}
+
+@media (min-width: 320px) and (max-width: 767px) and (min-resolution: 192dpi) {
+    .main-section {
+        background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7), 
+        rgba(46, 47, 66, 0.7)
+        ),
+        url('../images/office-mobile@2x.jpg');
     }
 }
